@@ -1,5 +1,5 @@
 body {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 1.2em;
     display: block;
 }
@@ -13,14 +13,15 @@ h1 {
     -webkit-margin-end: 0;
 }
 
-h1 ~ h1 {
-    padding-top: 0.7em;
+.container ~ .container {
+    padding-top: 1em;
 }
 
 .header-bold {
     font-weight: bold;
     display: block;
-    padding-top: 1em;
+    padding: 1em 0 0.5em 0;
+    color: #2d8bce;
 }
 
 li {
@@ -29,6 +30,7 @@ li {
 
 .container-contact {
     font-size: 1.3em;
+    text-align: center;
 }
 
 .container-links {
@@ -40,4 +42,8 @@ li {
 .subcontainer-links {
     flex-grow: 1;
     align-self: flex-start;
+}
+
+.center > h1 {
+    text-align: center;
 }
