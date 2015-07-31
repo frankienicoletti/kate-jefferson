@@ -1,0 +1,43 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+    display: block;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #2d8bce;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+h1 ~ h1 {
+    padding-top: 0.7em;
+}
+
+.header-bold {
+    font-weight: bold;
+    display: block;
+    padding-top: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+.container-contact {
+    font-size: 1.3em;
+}
+
+.container-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.subcontainer-links {
+    flex-grow: 1;
+    align-self: flex-start;
+}
