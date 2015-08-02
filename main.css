@@ -4,6 +4,43 @@ body {
     display: block;
 }
 
+.body {
+    width: 100%;
+    /*margin: 0 auto;*/
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* screen width less than 1024px */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* screen width less than 900px */
+@media only screen and (max-width: 900px) {
+    .content {
+        width: 90%;
+        /*margin: 0 auto;*/
+    }
+}
+
+/*/!* mobile wide/smaller tablets *!/*/
+/*@media only screen and (max-width: 767px) {*/
+    /*.body {*/
+        /*width: 90%;*/
+    /*}*/
+/*}*/
+
+/*/!* mobile narrow *!/*/
+/*@media only screen and (max-width: 480px) {*/
+    /*.body {*/
+        /*width: 100%;*/
+    /*}*/
+/*}*/
+
 h1 {
     font-family: 'Shadows Into Light', cursive;
     color: #2d8bce;
@@ -26,6 +63,7 @@ h1 {
 
 li {
     list-style: none;
+    display: block;
 }
 
 .container-contact {
@@ -34,16 +72,16 @@ li {
 }
 
 .container-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.subcontainer-links {
-    flex-grow: 1;
-    align-self: flex-start;
 }
 
 .center > h1 {
     text-align: center;
+}
+
+a {
+    color: #2d8bce;
+}
+
+a:visited {
+    color: #234e84;
 }
