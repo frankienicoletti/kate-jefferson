@@ -6,40 +6,12 @@ body {
 
 .body {
     width: 100%;
-    /*margin: 0 auto;*/
 }
 
 .content {
     width: 60%;
     margin: 0 auto;
 }
-
-/* screen width less than 1024px */
-@media only screen and (max-width: 1024px) {
-
-}
-
-/* screen width less than 900px */
-@media only screen and (max-width: 900px) {
-    .content {
-        width: 90%;
-        /*margin: 0 auto;*/
-    }
-}
-
-/*/!* mobile wide/smaller tablets *!/*/
-/*@media only screen and (max-width: 767px) {*/
-    /*.body {*/
-        /*width: 90%;*/
-    /*}*/
-/*}*/
-
-/*/!* mobile narrow *!/*/
-/*@media only screen and (max-width: 480px) {*/
-    /*.body {*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/
 
 h1 {
     font-family: 'Shadows Into Light', cursive;
@@ -48,6 +20,12 @@ h1 {
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
+    line-height: 1em;
+    padding-bottom: 0.5em;
+}
+
+h1 > .header-bold {
+    padding-bottom: 0;
 }
 
 .container ~ .container {
@@ -76,6 +54,7 @@ li {
 
 .center > h1 {
     text-align: center;
+    padding-top: 0.5em;
 }
 
 a {
@@ -84,4 +63,33 @@ a {
 
 a:visited {
     color: #234e84;
+}
+
+/* screen width less than 900px */
+@media only screen and (max-width: 900px) {
+    .content {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    h1 {
+        /*line-height: 1em;*/
+    }
+}
+
+/* screen width less than 1024px */
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+
+/* mobile wide/smaller tablets */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* mobile narrow */
+@media only screen and (max-width: 480px) {
+
 }
