@@ -24,10 +24,6 @@ h1 {
     padding-bottom: 0.5em;
 }
 
-h1 > .header-bold {
-    padding-bottom: 0;
-}
-
 .container ~ .container {
     padding-top: 1em;
 }
@@ -49,7 +45,8 @@ li {
     text-align: center;
 }
 
-.container-links {
+.container-projects > .header-bold:first-child {
+    padding-top: 0;
 }
 
 .center > h1 {
@@ -63,6 +60,10 @@ a {
 
 a:visited {
     color: #234e84;
+}
+
+a:hover {
+    color: #aa0000;
 }
 
 /* screen width less than 900px */
@@ -82,8 +83,6 @@ a:visited {
 
 }
 
-
-
 /* mobile wide/smaller tablets */
 @media only screen and (max-width: 767px) {
 
@@ -92,4 +91,13 @@ a:visited {
 /* mobile narrow */
 @media only screen and (max-width: 480px) {
 
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
 }
