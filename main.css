@@ -100,4 +100,5 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: inherit;
+    max-width: 100%;
 }
